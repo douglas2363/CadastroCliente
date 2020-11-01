@@ -30,7 +30,7 @@ public class ClienteController {
     @GetMapping("{id}")
     public Cliente acharPorId(@PathVariable Integer id){
         return  clienteRepository.findById(id)
-                .orElseThrow(()-> new ResponseStatusException(HttpStatus.NOT_FOUND));
+                .orElseThrow(()-> new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente não Encontrado"));
     }
 
     @DeleteMapping("{id}")
@@ -42,12 +42,12 @@ public class ClienteController {
                    clienteRepository.delete(cliente);
                    return Void.TYPE;
         })
-                .orElseThrow(()-> new ResponseStatusException(HttpStatus.NOT_FOUND));
+                .orElseThrow(()-> new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente não Encontrado"));
     }
 
     @PutMapping("{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void atualizar(@PathVariable Integer id, @RequestBody Cliente clienteAtualizado){
+    public void atualizar(@PathVariable Integer id, @RequestBody @Valid Cliente clienteAtualizado){
         clienteRepository
                 .findById(id)
                 .map(cliente -> {
@@ -56,7 +56,7 @@ public class ClienteController {
                    cliente.setCpf(clienteAtualizado.getCpf());
                     return clienteRepository.save(cliente);
                 })
-                .orElseThrow(()-> new ResponseStatusException(HttpStatus.NOT_FOUND));
+                .orElseThrow(()-> new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente não Encontrado"));
 
     }
 
