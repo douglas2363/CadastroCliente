@@ -12,13 +12,13 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class ClienteApplication extends SpringBootServletInitializer {
 
-        @Bean
-        public CommandLineRunner run(@Autowired ClienteRepository repository){
-            return  args -> {
-                Cliente cliente = Cliente.builder().cpf("02856643108").nome("Douglas Lima").build();
-                repository.save(cliente);
-            };
-        }
+//        @Bean
+//        public CommandLineRunner run(@Autowired ClienteRepository repository){
+//            return  args -> {
+//                Cliente cliente = Cliente.builder().cpf("02856643108").nome("Douglas Lima").build();
+//                repository.save(cliente);
+//            };
+//        }
 
     public static void main(String[] args)  {
         SpringApplication.run(ClienteApplication.class, args);
