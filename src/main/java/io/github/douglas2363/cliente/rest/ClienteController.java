@@ -29,7 +29,8 @@ public class ClienteController {
 
     @GetMapping("{id}")
     public Cliente acharPorId(@PathVariable Integer id){
-        return  clienteRepository.findById(id)
+        return  clienteRepository
+                .findById(id)
                 .orElseThrow(()-> new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente não Encontrado"));
     }
 
