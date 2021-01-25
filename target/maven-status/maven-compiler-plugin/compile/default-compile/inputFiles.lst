@@ -1,0 +1,13 @@
+C:\Users\Pichau\Desktop\EstudoAngular\cadastro-cliente\src\main\java\io\github\douglas2363\cliente\ClienteApplication.java
+C:\Users\Pichau\Desktop\EstudoAngular\cadastro-cliente\src\main\java\io\github\douglas2363\cliente\rest\dto\ServicoPrestadoDTO.java
+C:\Users\Pichau\Desktop\EstudoAngular\cadastro-cliente\src\main\java\io\github\douglas2363\cliente\Util\BigDecimalConverter.java
+C:\Users\Pichau\Desktop\EstudoAngular\cadastro-cliente\src\main\java\io\github\douglas2363\cliente\rest\ApplicationControllerAdvice.java
+C:\Users\Pichau\Desktop\EstudoAngular\cadastro-cliente\src\main\java\io\github\douglas2363\cliente\model\entity\ServicoPrestado.java
+C:\Users\Pichau\Desktop\EstudoAngular\cadastro-cliente\src\main\java\io\github\douglas2363\cliente\exception\ApiErros.java
+C:\Users\Pichau\Desktop\EstudoAngular\cadastro-cliente\src\main\java\io\github\douglas2363\cliente\model\repository\ServicoPrestadoRepository.java
+C:\Users\Pichau\Desktop\EstudoAngular\cadastro-cliente\src\main\java\io\github\douglas2363\cliente\model\entity\Cliente.java
+C:\Users\Pichau\Desktop\EstudoAngular\cadastro-cliente\src\main\java\io\github\douglas2363\cliente\model\repository\ClienteRepository.java
+C:\Users\Pichau\Desktop\EstudoAngular\cadastro-cliente\src\main\java\io\github\douglas2363\cliente\rest\ClienteController.java
+C:\Users\Pichau\Desktop\EstudoAngular\cadastro-cliente\src\main\java\io\github\douglas2363\cliente\config\InternacionalizacaoConfig.java
+C:\Users\Pichau\Desktop\EstudoAngular\cadastro-cliente\src\main\java\io\github\douglas2363\cliente\config\WebConfig.java
+C:\Users\Pichau\Desktop\EstudoAngular\cadastro-cliente\src\main\java\io\github\douglas2363\cliente\rest\ServicoPrestadoController.java

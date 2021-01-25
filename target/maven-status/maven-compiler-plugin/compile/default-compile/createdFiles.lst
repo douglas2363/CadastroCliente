@@ -1,0 +1,14 @@
+io\github\douglas2363\cliente\model\entity\Cliente.class
+io\github\douglas2363\cliente\rest\dto\ServicoPrestadoDTO.class
+io\github\douglas2363\cliente\model\entity\Cliente$ClienteBuilder.class
+io\github\douglas2363\cliente\config\WebConfig.class
+io\github\douglas2363\cliente\Util\BigDecimalConverter.class
+io\github\douglas2363\cliente\model\entity\ServicoPrestado.class
+io\github\douglas2363\cliente\rest\ServicoPrestadoController.class
+io\github\douglas2363\cliente\model\repository\ServicoPrestadoRepository.class
+io\github\douglas2363\cliente\rest\ApplicationControllerAdvice.class
+io\github\douglas2363\cliente\ClienteApplication.class
+io\github\douglas2363\cliente\config\InternacionalizacaoConfig.class
+io\github\douglas2363\cliente\rest\ClienteController.class
+io\github\douglas2363\cliente\exception\ApiErros.class
+io\github\douglas2363\cliente\model\repository\ClienteRepository.class
