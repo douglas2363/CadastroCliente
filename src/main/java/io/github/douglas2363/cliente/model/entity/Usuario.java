@@ -1,14 +1,15 @@
 package io.github.douglas2363.cliente.model.entity;
 
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
+import java.util.Collection;
 
 @Entity
-@Setter
-@Getter
+@Data
 @NoArgsConstructor
 public class Usuario {
 

@@ -2,7 +2,10 @@ package io.github.douglas2363.cliente.model.repository;
 
 import io.github.douglas2363.cliente.model.entity.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.Optional;
 
 public interface UsuarioRepository extends JpaRepository<Usuario, Integer> {
+
+    Optional<Usuario> findByUsername (String username);
 
 }
