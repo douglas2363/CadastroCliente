@@ -6,6 +6,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 import java.util.Collection;
 
 @Entity
@@ -18,9 +19,11 @@ public class Usuario {
     private Integer id;
 
     @Column(unique = true, name = "login")
+    @NotEmpty(message = "{campo.username.obrigatorio}")
     private String username;
 
-    @Column(unique = true, name = "senha")
+    @Column(name = "senha")
+    @NotEmpty(message = "{campo.password.obrigatorio}")
     private String password;
 
 }

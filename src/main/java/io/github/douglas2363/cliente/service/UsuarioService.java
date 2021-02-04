@@ -1,5 +1,6 @@
 package io.github.douglas2363.cliente.service;
 
+import io.github.douglas2363.cliente.exception.UsuarioCadastradoExcpetion;
 import io.github.douglas2363.cliente.model.entity.Usuario;
 import io.github.douglas2363.cliente.model.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,16 @@ public class UsuarioService implements UserDetailsService {
     @Autowired
     private UsuarioRepository usuarioRepository;
 
+    public Usuario salvar(Usuario usuario){
+
+        boolean exists = usuarioRepository.existsByUsername(usuario.getUsername());
+        if(exists){
+            throw  new UsuarioCadastradoExcpetion(usuario.getUsername());
+        }
+
+        return usuarioRepository.save(usuario);
+    }
+
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Usuario usuario = usuarioRepository
@@ -28,6 +39,6 @@ public class UsuarioService implements UserDetailsService {
                 .password(usuario.getPassword())
                 .roles("USER")
                 .build();
-
     }
+
 }
